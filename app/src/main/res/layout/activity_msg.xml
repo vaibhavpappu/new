@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MsgActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Just Chat"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+  <TextView
+      android:id="@+id/lmsg"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+<LinearLayout
+android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tmsg"
+        android:paddingTop="430dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+<TextView
+    android:id="@+id/conversation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/msg"
+            android:layout_gravity="bottom"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Type Message" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Send" />
+</LinearLayout>
+</LinearLayout>
